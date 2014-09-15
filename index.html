@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html class="html">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="7.4.30.244"/>
+  <link rel="shortcut icon" href="images/dxartist-favicon.ico?3829292585"/>
+  <title>DxArtist</title>
+  <meta http-equiv="X-UA-Compatible" content="chrome=IE8"/>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?3799461482"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?4135966337" id="pagesheet"/>
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?3867034424"/>
+  <![endif]-->
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   document.documentElement.className += ' js';
+var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/open-sans:n4,n3,n8:all.js" type="text/javascript">\x3C/script>');
+</script>
+    <!--custom head HTML-->
+  <script> 
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
+
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 1000;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+
+
+</script>
+
+
+ <style>
+
+*::-moz-selection{
+
+background:#c0392b;
+
+color:#ffffff;
+
+}
+
+</style>
+
+  <!--HTML Widget code-->
+  
+       <style>
+        body {
+    overflow: hidden;
+}
+
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#222222; /* change if the mask should have another color then white */
+    opacity:0.8;
+    //z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:50px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    margin-left:-100px;
+    margin-top:55px;
+    font-size:12px;
+    color:#DDDDDD;
+    text-align:center;
+    font-family:Verdana;
+}
+       </style>
+       <style>
+#floatingBarsG{
+position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+width:50px;
+margin-left:-25px;
+height:62px}
+
+.blockG{
+position:absolute;
+background-color:#222222;
+width:8px;
+height:19px;
+-moz-border-radius:7px 7px 0 0;
+-moz-transform:scale(0.4);
+-moz-animation-name:fadeG;
+-moz-animation-duration:1.28s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:linear;
+-webkit-border-radius:7px 7px 0 0;
+-webkit-transform:scale(0.4);
+-webkit-animation-name:fadeG;
+-webkit-animation-duration:1.28s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;
+-ms-border-radius:7px 7px 0 0;
+-ms-transform:scale(0.4);
+-ms-animation-name:fadeG;
+-ms-animation-duration:1.28s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:linear;
+-o-border-radius:7px 7px 0 0;
+-o-transform:scale(0.4);
+-o-animation-name:fadeG;
+-o-animation-duration:1.28s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:linear;
+border-radius:7px 7px 0 0;
+transform:scale(0.4);
+animation-name:fadeG;
+animation-duration:1.28s;
+animation-iteration-count:infinite;
+animation-direction:linear;
+}
+
+#rotateG_01{
+left:0;
+top:23px;
+-moz-animation-delay:0.4800000000000001s;
+-moz-transform:rotate(-90deg);
+-webkit-animation-delay:0.4800000000000001s;
+-webkit-transform:rotate(-90deg);
+-ms-animation-delay:0.4800000000000001s;
+-ms-transform:rotate(-90deg);
+-o-animation-delay:0.4800000000000001s;
+-o-transform:rotate(-90deg);
+animation-delay:0.4800000000000001s;
+transform:rotate(-90deg);
+}
+
+#rotateG_02{
+left:6px;
+top:8px;
+-moz-animation-delay:0.64s;
+-moz-transform:rotate(-45deg);
+-webkit-animation-delay:0.64s;
+-webkit-transform:rotate(-45deg);
+-ms-animation-delay:0.64s;
+-ms-transform:rotate(-45deg);
+-o-animation-delay:0.64s;
+-o-transform:rotate(-45deg);
+animation-delay:0.64s;
+transform:rotate(-45deg);
+}
+
+#rotateG_03{
+left:21px;
+top:2px;
+-moz-animation-delay:0.8s;
+-moz-transform:rotate(0deg);
+-webkit-animation-delay:0.8s;
+-webkit-transform:rotate(0deg);
+-ms-animation-delay:0.8s;
+-ms-transform:rotate(0deg);
+-o-animation-delay:0.8s;
+-o-transform:rotate(0deg);
+animation-delay:0.8s;
+transform:rotate(0deg);
+}
+
+#rotateG_04{
+right:6px;
+top:8px;
+-moz-animation-delay:0.9600000000000002s;
+-moz-transform:rotate(45deg);
+-webkit-animation-delay:0.9600000000000002s;
+-webkit-transform:rotate(45deg);
+-ms-animation-delay:0.9600000000000002s;
+-ms-transform:rotate(45deg);
+-o-animation-delay:0.9600000000000002s;
+-o-transform:rotate(45deg);
+animation-delay:0.9600000000000002s;
+transform:rotate(45deg);
+}
+
+#rotateG_05{
+right:0;
+top:23px;
+-moz-animation-delay:1.12s;
+-moz-transform:rotate(90deg);
+-webkit-animation-delay:1.12s;
+-webkit-transform:rotate(90deg);
+-ms-animation-delay:1.12s;
+-ms-transform:rotate(90deg);
+-o-animation-delay:1.12s;
+-o-transform:rotate(90deg);
+animation-delay:1.12s;
+transform:rotate(90deg);
+}
+
+#rotateG_06{
+right:6px;
+bottom:6px;
+-moz-animation-delay:1.28s;
+-moz-transform:rotate(135deg);
+-webkit-animation-delay:1.28s;
+-webkit-transform:rotate(135deg);
+-ms-animation-delay:1.28s;
+-ms-transform:rotate(135deg);
+-o-animation-delay:1.28s;
+-o-transform:rotate(135deg);
+animation-delay:1.28s;
+transform:rotate(135deg);
+}
+
+#rotateG_07{
+bottom:0;
+left:21px;
+-moz-animation-delay:1.44s;
+-moz-transform:rotate(180deg);
+-webkit-animation-delay:1.44s;
+-webkit-transform:rotate(180deg);
+-ms-animation-delay:1.44s;
+-ms-transform:rotate(180deg);
+-o-animation-delay:1.44s;
+-o-transform:rotate(180deg);
+animation-delay:1.44s;
+transform:rotate(180deg);
+}
+
+#rotateG_08{
+left:6px;
+bottom:6px;
+-moz-animation-delay:1.6s;
+-moz-transform:rotate(-135deg);
+-webkit-animation-delay:1.6s;
+-webkit-transform:rotate(-135deg);
+-ms-animation-delay:1.6s;
+-ms-transform:rotate(-135deg);
+-o-animation-delay:1.6s;
+-o-transform:rotate(-135deg);
+animation-delay:1.6s;
+transform:rotate(-135deg);
+}
+
+@-moz-keyframes fadeG{
+0%{
+background-color:#3498db}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@-webkit-keyframes fadeG{
+0%{
+background-color:#3498db}
+
+100%{
+background-color:#222222}
+
+}
+
+@-ms-keyframes fadeG{
+0%{
+background-color:#3498db}
+
+100%{
+background-color:#222222}
+
+}
+
+@-o-keyframes fadeG{
+0%{
+background-color:#3498db}
+
+100%{
+background-color:#222222}
+
+}
+
+@keyframes fadeG{
+0%{
+background-color:#3498db}
+
+100%{
+background-color:#222222}
+
+}
+
+</style>
+
+ </head>
+ <body>
+
+  <div class="clearfix" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="phome"><!-- group -->
+     <a class="anchor_item grpelem" id="home"></a>
+     <div class="sbg Button clearfix grpelem" id="pbuttonu840"><!-- group -->
+      <div class="clearfix mse_pre_init" id="buttonu840"><!-- container box -->
+       <div class="grpelem" id="u589"><!-- state-based BG images --></div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu1195"><!-- group -->
+     <div class="clip_frame mse_pre_init" id="u1195"><!-- image -->
+      <img class="block" id="u1195_img" src="images/mainbgweb.jpg" alt="" width="1400" height="700"/>
+     </div>
+     <div class="pointer_cursor clearfix" id="u776-6"><!-- content -->
+      <a class="block anim_swing" href="index.html#home"></a>
+      <p><a class="nonblock anim_swing" href="index.html#home">HOME</a></p>
+     </div>
+     <div class="clearfix" id="u779-6"><!-- content -->
+      <p><a class="nonblock anim_swing" href="index.html#about">ABOUT</a></p>
+     </div>
+     <div class="clearfix" id="u785-6"><!-- content -->
+      <p><a class="nonblock anim_swing" href="index.html#work">SITES</a></p>
+     </div>
+     <div class="clearfix" id="u781-6"><!-- content -->
+      <p><a class="nonblock anim_swing" href="index.html#contact">CONTACT</a></p>
+     </div>
+    </div>
+    <div class="clearfix mse_pre_init" id="u623-9"><!-- content -->
+     <p id="u623-5"><span id="u623">Design is Everything!</span><span id="u623-4"><br/><br/></span></p>
+     <p id="u623-7">Dx Artist is a creative web design studio. We design websites which stands out.</p>
+    </div>
+    <div class="colelem" id="u710"><!-- custom html -->
+     
+      
+<div id="preloader">
+    <div id="floatingBarsG">
+    <div class="blockG" id="rotateG_01">
+    </div>
+    <div class="blockG" id="rotateG_02">
+    </div>
+    <div class="blockG" id="rotateG_03">
+    </div>
+    <div class="blockG" id="rotateG_04">
+    </div>
+    <div class="blockG" id="rotateG_05">
+    </div>
+    <div class="blockG" id="rotateG_06">
+    </div>
+    <div class="blockG" id="rotateG_07">
+    </div>
+    <div class="blockG" id="rotateG_08">
+    </div>
+    </div>
+    <div id="status">Loading the page...</div>
+</div>
+
+</div>
+    <div class="colelem" id="u1078"><!-- custom html -->
+        <style type="text/css">
+
+html,body{overflow-x:hidden;}
+
+</style>
+
+</div>
+    <div class="browser_width mse_pre_init" id="u441"><!-- simple frame --></div>
+    <div class="clip_frame mse_pre_init" id="u1570"><!-- image -->
+     <img class="block" id="u1570_img" src="images/cloud3x800.png" alt="" width="800" height="436"/>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1564"><!-- image -->
+     <img class="block" id="u1564_img" src="images/cloud4x300.png" alt="" width="300" height="162"/>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1591"><!-- image -->
+     <img class="block" id="u1591_img" src="images/cloud4x800.png" alt="" width="800" height="433"/>
+    </div>
+    <a class="anchor_item colelem" id="about"></a>
+    <div class="clearfix mse_pre_init" id="u1040-4"><!-- content -->
+     <p>Design is everything</p>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1586"><!-- image -->
+     <img class="block" id="u1586_img" src="images/cloud2x800.png" alt="" width="800" height="433"/>
+    </div>
+    <a class="nonblock nontext clearfix mse_pre_init" id="u1042-4" href="http://en.wikipedia.org/wiki/Paul_Rand" target="_blank"><!-- content --><p>&#45;Paul Rand</p></a>
+    <div class="clearfix mse_pre_init" id="u1043-4"><!-- content -->
+     <p class="ts01-Body-Serif-Basic" id="u1043-2">Dxartist was born in 2013 and is located in Bangalore, India.&nbsp; We maintain a distinct passion for great design and small business. The people within Dxartist design studio share as much aspiration and passion for their business as any business owner should. This means that we can identify with, and provide for, the needs of our clients better than most. Dxartist has expanded our service offerings to include not just web and graphic design, but social media, search engine optimisation (SEO), logo creation, mobile website development as well as concept development.</p>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1599"><!-- image -->
+     <img class="block" id="u1599_img" src="images/cloud3x300.png" alt="" width="300" height="164"/>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1552"><!-- image -->
+     <img class="block" id="u1552_img" src="images/cloud2x300.png" alt="" width="300" height="162"/>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1596"><!-- image -->
+     <img class="block" id="u1596_img" src="images/cloud2x300.png" alt="" width="300" height="162"/>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1604"><!-- image -->
+     <img class="block" id="u1604_img" src="images/cloud1x300.png" alt="" width="300" height="131"/>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1670"><!-- image -->
+     <img class="block" id="u1670_img" src="images/002.png" alt="" width="538" height="438"/>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u829"><!-- image -->
+     <img class="block" id="u829_img" src="images/mainbg2web.jpg" alt="" width="1400" height="700"/>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1640"><!-- image -->
+     <img class="block" id="u1640_img" src="images/007.png" alt="" width="419" height="205"/>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1609"><!-- image -->
+     <img class="block" id="u1609_img" src="images/cloud4x300.png" alt="" width="300" height="162"/>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1612"><!-- image -->
+     <img class="block" id="u1612_img" src="images/cloud3x300.png" alt="" width="300" height="164"/>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u1645"><!-- image -->
+     <img class="block" id="u1645_img" src="images/010.png" alt="" width="500" height="259"/>
+    </div>
+    <a class="anchor_item colelem" id="work"></a>
+    <div class="clearfix colelem" id="pu1169"><!-- group -->
+     <a class="nonblock nontext clip_frame grpelem" id="u1169" href="http://www.dxartist.com/simple" target="_blank"><!-- image --><img class="block" id="u1169_img" src="images/simple.png" alt="" width="177" height="165"/></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u1164" href="http://www.dxartist.com/aurora" target="_blank"><!-- image --><img class="block" id="u1164_img" src="images/aurora.png" alt="" width="180" height="168"/></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u1174" href="http://www.dxartist.com/thedoor" target="_blank"><!-- image --><img class="block" id="u1174_img" src="images/thedoor.png" alt="" width="178" height="166"/></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u1700" href="http://www.dxartist.com/Drogo/index.html" target="_blank"><!-- image --><img class="block" id="u1700_img" src="images/drogo.png" alt="" width="176" height="165"/></a>
+     <div class="clearfix grpelem" id="u1179-4"><!-- content -->
+      <p>more to come. . .</p>
+     </div>
+    </div>
+    <div class="gradient browser_width mse_pre_init" id="u452"><!-- simple frame --></div>
+    <div class="mse_pre_init" id="u934"><!-- animation -->
+     <iframe id="U936_animation" src="assets/bird/bird.html" scrolling="no" class="animationContainer an_invi"></iframe>
+    </div>
+    <div class="mse_pre_init" id="u453"><!-- simple frame --></div>
+    <div class="mse_pre_init" id="u454"><!-- simple frame --></div>
+    <div class="mse_pre_init" id="u455"><!-- simple frame --></div>
+    <div class="browser_width mse_pre_init" id="u456"><!-- simple frame --></div>
+    <a class="anchor_item colelem" id="contact"></a>
+    <div class="clip_frame mse_pre_init" id="u859" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.9994,M12=-0.0349,M21=0.0349,M22=0.9994,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-9" data-mu-ie-matrix-dy="-13"><!-- image -->
+     <img class="block" id="u859_img" src="images/rocketweb.png" alt="" width="779" height="529"/>
+    </div>
+    <form class="form-grp clearfix mse_pre_init" id="widgetu864" method="post" enctype="multipart/form-data" action="scripts/form-u864.php"><!-- none box -->
+     <div class="fld-grp clearfix grpelem" id="widgetu865" data-required="true"><!-- none box -->
+      <label class="fld-label actAsDiv clearfix grpelem" id="u866-4" for="widgetu865_input"><!-- content -->
+       <span class="actAsPara">Name:</span>
+      </label>
+      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u867-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu865_input" name="custom_U865" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu865_prompt" for="widgetu865_input"><span class="actAsPara">Enter Name</span></label></span>
+     </div>
+     <div class="fld-grp clearfix grpelem" id="widgetu888" data-required="true" data-type="email"><!-- none box -->
+      <label class="fld-label actAsDiv clearfix grpelem" id="u892-4" for="widgetu888_input"><!-- content -->
+       <span class="actAsPara">Email:</span>
+      </label>
+      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u890-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu888_input" name="Email" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu888_prompt" for="widgetu888_input"><span class="actAsPara">Enter Email</span></label></span>
+     </div>
+     <div class="clearfix grpelem" id="u872-4"><!-- content -->
+      <p>Submitting Form...</p>
+     </div>
+     <div class="clearfix grpelem" id="u871-4"><!-- content -->
+      <p>The server encountered an error.</p>
+     </div>
+     <div class="clearfix grpelem" id="u887-4"><!-- content -->
+      <p>Form received.</p>
+     </div>
+     <input class="submit-btn NoWrap grpelem" id="u870-17" type="submit" value="" tabindex="4"/><!-- state-based BG images -->
+     <div class="fld-grp clearfix grpelem" id="widgetu893" data-required="false"><!-- none box -->
+      <label class="fld-label actAsDiv clearfix grpelem" id="u894-4" for="widgetu893_input"><!-- content -->
+       <span class="actAsPara">Message:</span>
+      </label>
+      <span class="fld-textarea actAsDiv clearfix grpelem" id="u896-4"><!-- content --><textarea class="wrapped-input" id="widgetu893_input" name="custom_U893" tabindex="3"></textarea><label class="wrapped-input fld-prompt" id="widgetu893_prompt" for="widgetu893_input"><span class="actAsPara">Enter Your Message</span></label></span>
+     </div>
+    </form>
+    <div class="verticalspacer"></div>
+    <div class="browser_width colelem" id="u616"><!-- group -->
+     <div class="clearfix" id="u616_align_to_page">
+      <div class="clearfix grpelem" id="u931-4"><!-- content -->
+       <p>All rights reserved</p>
+      </div>
+      <div class="clearfix grpelem" id="u933-4"><!-- content -->
+       <p>Designed by</p>
+      </div>
+      <div class="clip_frame grpelem" id="u617"><!-- image -->
+       <img class="block" id="u617_img" src="images/dxartistflat100.png" alt="" width="100" height="47"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="preload_images">
+   <img class="preload" src="images/u589-r.png" alt=""/>
+   <img class="preload" src="images/u870-17-r.png" alt=""/>
+   <img class="preload" src="images/u870-17-m.png" alt=""/>
+   <img class="preload" src="images/u870-17-fs.png" alt=""/>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script src="scripts/museutils.js?3880880085" type="text/javascript"></script>
+  <script src="scripts/jquery.scrolleffects.js?56249048" type="text/javascript"></script>
+  <script src="scripts/jquery.tobrowserwidth.js?152985095" type="text/javascript"></script>
+  <script src="scripts/webpro.js?33264525" type="text/javascript"></script>
+  <script src="scripts/jquery.watch.js?4199601726" type="text/javascript"></script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   $(document).ready(function() { try {
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+$('.browser_width').toBrowserWidth();/* browser width elements */
+Muse.Utils.prepHyperlinks(true);/* body */
+$('#buttonu840').registerPositionScrollEffect([{"in":[-Infinity,-3],"speed":[0,0.5]},{"in":[-3,Infinity],"speed":[0,0.5]}]);/* scroll effect */
+$('#u1195').registerPositionScrollEffect([{"in":[-Infinity,0],"speed":[0,0.5]},{"in":[0,Infinity],"speed":[0,0.5]}]);/* scroll effect */
+$('#u623-9').registerPositionScrollEffect([{"in":[-Infinity,13],"speed":[0,0.8]},{"in":[13,Infinity],"speed":[0,0.8]}]);/* scroll effect */
+$('#u441').registerPositionScrollEffect([{"in":[-Infinity,408],"speed":[null,0.5]},{"in":[408,Infinity],"speed":[null,0.5]}]);/* scroll effect */
+$('#u1570').registerPositionScrollEffect([{"in":[-Infinity,823.9],"speed":[0,0.7]},{"in":[823.9,Infinity],"speed":[0,0.7]}]);/* scroll effect */
+$('#u1564').registerPositionScrollEffect([{"in":[-Infinity,943],"speed":[0,1.3]},{"in":[943,Infinity],"speed":[0,1.3]}]);/* scroll effect */
+$('#u1591').registerPositionScrollEffect([{"in":[-Infinity,1042],"speed":[0,0.7]},{"in":[1042,Infinity],"speed":[0,0.7]}]);/* scroll effect */
+$('#u1040-4').registerPositionScrollEffect([{"in":[-Infinity,1352.2],"speed":[0,0.8]},{"in":[1352.2,Infinity],"speed":[0,0.8]}]);/* scroll effect */
+$('#u1586').registerPositionScrollEffect([{"in":[-Infinity,1205],"speed":[0,0.7]},{"in":[1205,Infinity],"speed":[0,0.7]}]);/* scroll effect */
+$('#u1042-4').registerPositionScrollEffect([{"in":[-Infinity,1547.15],"speed":[0,0.8]},{"in":[1547.15,Infinity],"speed":[0,0.8]}]);/* scroll effect */
+$('#u1043-4').registerPositionScrollEffect([{"in":[-Infinity,1609.1],"speed":[0,0.8]},{"in":[1609.1,Infinity],"speed":[0,0.8]}]);/* scroll effect */
+$('#u1599').registerPositionScrollEffect([{"in":[-Infinity,1903.8],"speed":[0,1.3]},{"in":[1903.8,Infinity],"speed":[0,1.3]}]);/* scroll effect */
+$('#u1552').registerPositionScrollEffect([{"in":[-Infinity,1683.15],"speed":[0,1.3]},{"in":[1683.15,Infinity],"speed":[0,1.3]}]);/* scroll effect */
+$('#u1596').registerPositionScrollEffect([{"in":[-Infinity,1923.2],"speed":[0,1.3]},{"in":[1923.2,Infinity],"speed":[0,1.3]}]);/* scroll effect */
+$('#u1604').registerPositionScrollEffect([{"in":[-Infinity,1961],"speed":[0,1.3]},{"in":[1961,Infinity],"speed":[0,1.3]}]);/* scroll effect */
+$('#u1670').registerPositionScrollEffect([{"in":[-Infinity,2086.73],"speed":[0,0.7]},{"in":[2086.73,Infinity],"speed":[0,0.7]}]);/* scroll effect */
+$('#u829').registerPositionScrollEffect([{"in":[-Infinity,1645.6],"speed":[0,0.5]},{"in":[1645.6,Infinity],"speed":[0,0.5]}]);/* scroll effect */
+$('#u1640').registerPositionScrollEffect([{"in":[-Infinity,2203.2],"speed":[0,0.7]},{"in":[2203.2,Infinity],"speed":[0,0.7]}]);/* scroll effect */
+$('#u1609').registerPositionScrollEffect([{"in":[-Infinity,2224.7],"speed":[0,1.3]},{"in":[2224.7,Infinity],"speed":[0,1.3]}]);/* scroll effect */
+$('#u1612').registerPositionScrollEffect([{"in":[-Infinity,2412.2],"speed":[0,1.3]},{"in":[2412.2,Infinity],"speed":[0,1.3]}]);/* scroll effect */
+$('#u1645').registerPositionScrollEffect([{"in":[-Infinity,2410.8],"speed":[0,0.7]},{"in":[2410.8,Infinity],"speed":[0,0.7]}]);/* scroll effect */
+$('#u452').registerPositionScrollEffect([{"in":[-Infinity,2880.6],"speed":[null,0.5]},{"in":[2880.6,Infinity],"speed":[null,0.5]}]);/* scroll effect */
+Muse.Utils.initializeAnimations();/* animations */
+$('#u934').registerPositionScrollEffect([{"in":[-Infinity,3634.1],"speed":[0.6,0.5]},{"in":[3634.1,Infinity],"speed":[0.5,0.5]}]);/* scroll effect */
+$('#u934').registerEdgeAnimateScrollEffect([{"play":false,"in":[-Infinity,3634.1]},{"play":200,"in":[3634.1,Infinity]}]);/* scroll effect */
+$('#u453').registerPositionScrollEffect([{"in":[-Infinity,4755.2],"speed":[0.1,0.5]},{"in":[4755.2,Infinity],"speed":[0.1,0.5]}]);/* scroll effect */
+$('#u454').registerPositionScrollEffect([{"in":[-Infinity,4924.2],"speed":[-0.15,1]},{"in":[4924.2,Infinity],"speed":[-0.15,0.6]}]);/* scroll effect */
+$('#u455').registerPositionScrollEffect([{"in":[-Infinity,5045.15],"speed":[0.2,0.7]},{"in":[5045.15,Infinity],"speed":[0.2,0.7]}]);/* scroll effect */
+$('#u456').registerPositionScrollEffect([{"in":[-Infinity,5532.6],"speed":[null,0.5]},{"in":[5532.6,Infinity],"speed":[null,0.5]}]);/* scroll effect */
+$('#u859').registerPositionScrollEffect([{"in":[-Infinity,6515.05],"speed":[1,2]},{"in":[6515.05,Infinity],"speed":[1,2]}]);/* scroll effect */
+Muse.Utils.initWidget('#widgetu864', function(elem) { new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu864 */
+$('#widgetu864').registerPositionScrollEffect([{"in":[-Infinity,6740.9],"speed":[0,0.5]},{"in":[6740.9,Infinity],"speed":[0,0.5]}]);/* scroll effect */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+} catch(e) { Muse.Assert.fail('Error calling selector function:' + e); }});
+</script>
+  
+  <!--HTML Widget code-->
+  
+       <script type="text/javascript">
+    
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(200).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(200).css({'overflow':'visible'});
+        })
+    
+    </script>
+    
+   </body>
+</html>

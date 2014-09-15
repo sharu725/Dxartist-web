@@ -1,0 +1,65 @@
+<manifest alg="2" build="30" opt="false" iceEnabled="true">
+  <folder name="css">
+    <file name="site_global.css" crc="3799461482"/>
+    <file name="index.css" crc="4135966337" ref="index"/>
+    <file name="iefonts_index.css" crc="3867034424" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <folder name="bird">
+      <folder name="edge_includes">
+        <file name="edge.2.0.0.min.js" crc="4212855340" mt="1395163498000"/>
+        <file name="jquery-1.7.1.min.js" crc="4091143699" mt="1395163498000"/>
+      </folder>
+      <folder name="images">
+        <file name="Poster.png" crc="530456108" mt="1395163498000"/>
+        <file name="twitter-bird-sprite.png" crc="4123772981" mt="1395163498000"/>
+      </folder>
+      <file name="bird_edge.js" crc="165025456" mt="1395163498000"/>
+      <file name="bird_edgeActions.js" crc="4018550768" mt="1395163498000"/>
+      <file name="bird_edgePreload.js" crc="4021208039" mt="1395163498000"/>
+      <file name="bird.html" crc="3856980900" mt="1395163498000"/>
+    </folder>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3828297711" ref="index"/>
+    <file name="museutils.js" crc="3880880085" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="56249048" ref="index"/>
+    <file name="jquery.tobrowserwidth.js" crc="152985095" ref="index"/>
+    <file name="webpro.js" crc="33264525" ref="index"/>
+    <file name="form_check.php" crc="28954828" ref="index"/>
+    <file name="form_throttle.php" crc="412380283" ref="index"/>
+    <file name="form-u864.php" crc="3765538462" ref="index"/>
+    <file name="jquery.watch.js" crc="4199601726" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="dxartist-favicon.ico" crc="3829292585" ref="index"/>
+    <file name="u589.png" crc="3786017892" ref="index"/>
+    <file name="u589-r.png" crc="4162739937" ref="index"/>
+    <file name="mainbgweb.jpg" crc="388461450" ref="index"/>
+    <file name="cloud3x800.png" crc="4202367014" ref="index"/>
+    <file name="cloud4x300.png" crc="4110176510" ref="index"/>
+    <file name="cloud4x800.png" crc="72818466" ref="index"/>
+    <file name="cloud2x800.png" crc="3922091832" ref="index"/>
+    <file name="cloud3x300.png" crc="174950945" ref="index"/>
+    <file name="cloud2x300.png" crc="82649956" ref="index"/>
+    <file name="cloud1x300.png" crc="4197217200" ref="index"/>
+    <file name="002.png" crc="527059336" ref="index"/>
+    <file name="mainbg2web.jpg" crc="4194631815" ref="index"/>
+    <file name="007.png" crc="83010951" ref="index"/>
+    <file name="010.png" crc="305674452" ref="index"/>
+    <file name="simple.png" crc="4212018149" ref="index"/>
+    <file name="aurora.png" crc="3860341468" ref="index"/>
+    <file name="thedoor.png" crc="400897333" ref="index"/>
+    <file name="drogo.png" crc="220386792" ref="index"/>
+    <file name="wave3.png" crc="378814866" ref="index"/>
+    <file name="wave2.png" crc="4259023027" ref="index"/>
+    <file name="wave1.png" crc="3870686743" ref="index"/>
+    <file name="rocketweb.png" crc="3910221216" ref="index"/>
+    <file name="u870-17.png" crc="4168473340" ref="index"/>
+    <file name="u870-17-r.png" crc="476919878" ref="index"/>
+    <file name="u870-17-m.png" crc="4045609782" ref="index"/>
+    <file name="u870-17-fs.png" crc="491564953" ref="index"/>
+    <file name="dxartistflat100.png" crc="3920285264" ref="index"/>
+  </folder>
+  <file name="index.html" crc="280107679" mt="1404185953581" redirect="true"/>
+</manifest>
